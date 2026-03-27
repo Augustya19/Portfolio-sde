@@ -67,8 +67,8 @@ export default function Footer() {
             <div className="space-y-4">
               <h3 className="text-[10px] md:text-xs font-mono uppercase tracking-[0.4em] text-purple-400">Location</h3>
               <div className="text-xl md:text-2xl font-light text-white/60">
-                Remote / Global <br />
-                <span className="text-xs md:text-sm font-mono text-white/20 uppercase tracking-widest">UTC+00:00</span>
+                Gurgaon, India <br />
+                <span className="text-xs md:text-sm font-mono text-white/20 uppercase tracking-widest"></span>
               </div>
             </div>
           </div>
