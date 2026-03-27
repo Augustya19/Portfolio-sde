@@ -62,7 +62,7 @@ export default function About() {
                 transition={{ delay: 0.1 }}
                 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white tracking-tight"
               >
-                Hello, I'm <span className="text-purple-500 dark:text-purple-400">Aug.</span>
+                Hello, I'm <span className="text-purple-500 dark:text-purple-400">Augustya.</span>
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -71,7 +71,7 @@ export default function About() {
                 transition={{ delay: 0.2 }}
                 className="text-gray-600 dark:text-white/60 text-base sm:text-lg font-light leading-relaxed"
               >
-                I am a multi-disciplinary engineer specializing in the intersection of Artificial Intelligence and high-fidelity Frontend development. I believe that technology should not only be functional but also deeply immersive and aesthetically captivating.
+                I am a Computer Science graduate specializing in the intersection of Artificial Intelligence and high-fidelity Frontend development. I believe that technology should not only be functional but also deeply immersive and aesthetically captivating. I enjoy creating efficient, scalable systems and continuously learning new technologies to improve my skills.
               </motion.p>
             </div>
 
