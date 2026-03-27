@@ -24,20 +24,20 @@ export default function About() {
   return (
     <section id="about" className="py-32 bg-[#fdfafb] dark:bg-[#080508] relative overflow-hidden transition-colors duration-500">
       <div className="max-w-6xl mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image Side */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative group w-fit mx-auto lg:mx-0"
+            className="relative group w-full max-w-md mx-auto lg:mx-0"
           >
-            <div className="absolute -inset-4 bg-gradient-to-br from-purple-500/20 to-violet-500/20 rounded-[2rem] blur-2xl group-hover:opacity-100 transition-opacity opacity-50" />
-            <div className="relative rounded-[2rem] overflow-hidden border border-purple-500/20 shadow-2xl shadow-purple-500/10">
+            {/* <div className="absolute -inset-4 bg-gradient-to-br from-purple-500/20 to-violet-500/20 rounded-[2rem] blur-2xl group-hover:opacity-100 transition-opacity opacity-50" /> */}
+            <div className="relative rounded-[2rem] overflow-hidden border border-purple-500/20 shadow-2xl shadow-purple-500/10 aspect-square">
               <img
                 src="/aug.jpg"
-                className="w-full h-auto max-h-[500px] object-cover transition-all duration-700 hover:scale-105"
+                className="w-full h-full object-cover transition-all duration-700 hover:scale-105"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-purple-900/40 to-transparent mix-blend-overlay" />
@@ -45,8 +45,8 @@ export default function About() {
           </motion.div>
 
           {/* Content Side */}
-          <div className="space-y-12">
-            <div className="space-y-6">
+          <div className="space-y-8 lg:space-y-12 text-center lg:text-left">
+            <div className="space-y-4 lg:space-y-6">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -60,24 +60,22 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
-                className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white tracking-tight"
+                className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white tracking-tight"
               >
-                Hello, I'm <span className="text-purple-500 dark:text-purple-400">Augustya.</span>
+                Hello, I'm <span className="text-purple-500 dark:text-purple-400">Aug.</span>
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="text-gray-600 dark:text-white/60 text-lg font-light leading-relaxed"
+                className="text-gray-600 dark:text-white/60 text-base sm:text-lg font-light leading-relaxed"
               >
-                I am a Computer Science graduate specializing in the intersection of Artificial Intelligence and high-fidelity Frontend development. I believe that technology should not only be functional but also deeply immersive and aesthetically captivating.
-
-                 I enjoy creating efficient, scalable systems and continuously learning new technologies to improve my skills.
+                I am a multi-disciplinary engineer specializing in the intersection of Artificial Intelligence and high-fidelity Frontend development. I believe that technology should not only be functional but also deeply immersive and aesthetically captivating.
               </motion.p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12 text-left">
               {/* Education */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
