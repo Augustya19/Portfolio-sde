@@ -82,7 +82,7 @@ export const SKILLS: Skill[] = [
     name: 'TypeScript',
     category: 'Frontend',
     level: 95,
-    details: 'TYPE SAFETY',
+    details: 'VISUAL DESIGN',
     relatedProjects: ['Aether UI Kit']
   },
   {
@@ -96,7 +96,7 @@ export const SKILLS: Skill[] = [
     name: 'REST APIs',
     category: 'Data',
     level: 88,
-    details: 'DATA PIPELINES',
+    details: 'DEPLOYMENT',
     relatedProjects: ['NeuralVision Dashboard']
   },
   
@@ -118,14 +118,14 @@ export const SKILLS: Skill[] = [
     name: 'Figma/ Canva',
     category: 'Tools',
     level: 85,
-    details: 'DEPLOYMENT PIPELINES',
+    details: 'DESIGNING',
     relatedProjects: ['Quantum Chat']
   },
   {
     name: 'Applied AI',
     category: 'Tools',
     level: 95,
-    details: 'TYPE SAFETY',
+    details: 'AI BACKEND',
     relatedProjects: ['Aether UI Kit']
   },
 ];
