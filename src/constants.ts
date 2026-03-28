@@ -3,6 +3,17 @@ import { Project, Skill } from './types';
 export const PROJECTS: Project[] = [
   {
     id: '1',
+    title: 'AdmitSync',
+    description: 'AdmitSync is a smart, AI-powered college application tracking platform designed to simplify and streamline the admission process for students. It helps users manage multiple applications, track deadlines, and stay organized throughout their academic journey.',
+    tags: ['AI', 'React', 'Web Dev'],
+    liveUrl: 'https://admitsync.vercel.app/',
+    githubUrl: 'https://github.com/Augustya19/AdmitSync',
+    techStack: ['React', 'Javascript', 'Tailwind CSS', 'REST APIs'],
+    impact: 'Reduced monitoring latency by 40% and improved model debugging speed.',
+    image: '/admit.png',
+  },
+  {
+    id: '2',
     title: 'Career GPS',
     description: 'A data-driven web application that helps users evaluate and simulate career transitions by analyzing their current skills against target roles. It provides actionable insights such as match percentage, skill gaps, difficulty level, and a personalized learning roadmap.',
     tags: ['AI', 'React', 'Web Dev'],
@@ -13,7 +24,7 @@ export const PROJECTS: Project[] = [
     image: '/gps.png',
   },
   {
-    id: '2',
+    id: '3',
     title: 'Shush',
     description: 'SHUSH is a web application dedicated to raising awareness and promoting knowledge around women’s health and hygiene - with a strong emphasis on menstrual health education. The platform presents easy-to-understand, accessible content in an inclusive and mobile-responsive design.',
     tags: ['Full Stack', 'Frontend', 'Education'],
@@ -36,7 +47,7 @@ export const PROJECTS: Project[] = [
   },
   
   {
-    id: '3',
+    id: '5',
     title: 'Life Quest',
     description: 'LifeQuest is a gamified productivity app that transforms real-life goals into RPG-style quests. Users earn XP, unlock skill trees, and level up their character by completing habits and milestones.',
     tags: ['Web Dev', 'Design System', 'Framer Motion'],
