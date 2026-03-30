@@ -21,7 +21,7 @@ export const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/Augustya19/Career-GPS',
     techStack: ['React', 'TensorFlow.js', 'Tailwind CSS', 'REST APIs'],
     impact: 'Reduced monitoring latency by 40% and improved model debugging speed.',
-    image: '/gps.png',
+    image: '/career.png',
   },
   {
     id: '3',
