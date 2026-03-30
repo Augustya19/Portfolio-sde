@@ -26,7 +26,7 @@ export default function App() {
       <ScrollIndicators />
       <main className="relative">
         <Hero />
-        <div className="relative z-10">
+        <div className="relative">
           <About />
           <Skills />
           <Projects />
