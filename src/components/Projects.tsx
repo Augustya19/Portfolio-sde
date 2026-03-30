@@ -105,33 +105,33 @@ export default function Projects() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-white/90 dark:bg-black/90 backdrop-blur-xl"
+            className="fixed inset-0 z-[1000] flex items-center justify-center p-4 md:p-6 bg-white/90 dark:bg-black/90 backdrop-blur-xl"
           >
             <motion.div
               initial={{ scale: 0.9, y: 20 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.9, y: 20 }}
-              className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-white dark:bg-[#0d0a0d] border border-gray-200 dark:border-purple-500/10 rounded-[3rem] shadow-2xl"
+              className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-white dark:bg-[#0d0a0d] border border-gray-200 dark:border-purple-500/10 rounded-[2rem] md:rounded-[3rem] shadow-2xl"
             >
               <button
                 onClick={() => setSelectedProject(null)}
-                className="absolute top-8 right-8 p-3 rounded-full bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-gray-900 dark:text-white transition-colors z-10"
+                className="absolute top-4 right-4 md:top-8 md:right-8 p-3 rounded-full bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-gray-900 dark:text-white transition-colors z-10"
               >
                 <X size={20} />
               </button>
 
               <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="relative h-64 lg:h-auto">
+                <div className="relative h-48 sm:h-64 lg:h-auto">
                   <img
                     src={selectedProject.image}
                     alt={selectedProject.title}
                     className="absolute inset-0 w-full h-full object-cover"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-white dark:from-[#0d0a0d] via-transparent to-transparent hidden lg:block" />
+                  <div className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-white dark:from-[#0d0a0d] via-transparent to-transparent" />
                 </div>
 
-                <div className="p-12 space-y-8">
+                <div className="p-6 sm:p-8 md:p-12 space-y-6 md:space-y-8">
                   <div className="space-y-4">
                     <div className="flex flex-wrap gap-2">
                       {selectedProject.tags.map(tag => (
