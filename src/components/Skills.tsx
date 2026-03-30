@@ -98,29 +98,29 @@ export default function Skills() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-black/80 backdrop-blur-xl"
+            className="fixed inset-0 z-[1000] flex items-center justify-center p-4 md:p-6 bg-black/80 backdrop-blur-xl"
             onClick={() => setIsModalOpen(false)}
           >
             <motion.div
               initial={{ scale: 0.9, opacity: 0, y: 20 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.9, opacity: 0, y: 20 }}
-              className="w-full max-w-4xl bg-[#151215] border border-white/10 rounded-[3rem] p-8 md:p-12 overflow-hidden relative max-h-[90vh] overflow-y-auto scrollbar-hide"
+              className="w-full max-w-4xl bg-[#151215] border border-white/10 rounded-[2rem] md:rounded-[3rem] p-6 sm:p-8 md:p-12 overflow-hidden relative max-h-[90vh] overflow-y-auto scrollbar-hide"
               onClick={(e) => e.stopPropagation()}
             >
               <button
                 onClick={() => setIsModalOpen(false)}
-                className="absolute top-8 right-8 p-3 rounded-full bg-white/5 border border-white/10 text-white/60 hover:text-white transition-colors"
+                className="absolute top-4 right-4 md:top-8 md:right-8 p-3 rounded-full bg-white/5 border border-white/10 text-white/60 hover:text-white transition-colors z-10"
               >
                 <X size={20} />
               </button>
 
-              <div className="mb-12">
-                <h2 className="text-4xl font-bold text-white tracking-tighter mb-4">Full Tech Stack</h2>
-                <p className="text-white/50 font-light">Categorized neural capabilities and tools.</p>
+              <div className="mb-8 md:mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tighter mb-2 md:mb-4">Full Tech Stack</h2>
+                <p className="text-white/50 font-light text-sm md:text-base">Categorized neural capabilities and tools.</p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
                 {Object.entries(categorizedSkills).map(([category, skills]) => (
                   <div key={category} className="space-y-8">
                     <div className="flex items-center gap-3 text-purple-400">
